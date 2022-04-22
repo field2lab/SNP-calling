@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 ###########################################################################################################
-# Modified from GBS-SNP-CROP-5.pl (https://github.com/halelab/GBS-SNP-CROP)
+# Process demultiplexed reads, map, and extract allele counts at target positions
 # 1) Align processed sequences using BWA and output SAM file
 # 2) Edit SAM to solve soft clipped bases at the end of a fragment (call noEndClip2.py) (not required)
 # 3) Convert SAM to BAM and then pileup
@@ -84,8 +84,8 @@ print "\n Parameters used: \n
    bwa version = $bwa \n
    acpy version = $acpy \n
    samtools version = $samtools \n
-	 reference used = $Reference \n
-	 target positions = $outPos \n
+   reference used = $Reference \n
+   target positions = $outPos \n
    phred quality Q = $phred_Q \n
    mapping quality q = $map_q \n
    samtools F flag = $F \n
